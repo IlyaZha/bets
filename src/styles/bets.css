@@ -1,0 +1,46 @@
+.left {
+    width: 100px;
+    margin-left: 50px;
+}
+
+.middle {
+    width: 80%;
+}
+
+.mainBlock {
+    float: left;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.sport {
+    float: left;
+    padding-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.user {
+    float: right;
+    padding: 15px;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+th {
+    width: 80px;
+}
+
+tr .value {
+    width: 50px;
+}
+
+tr .long {
+    width: 200px;
+}

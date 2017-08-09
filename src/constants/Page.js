@@ -1,0 +1,3 @@
+export const GET_BETS_REQUEST = 'GET_BETS_REQUEST'
+export const GET_BETS_SUCCESS = 'GET_BETS_SUCCESS'
+export const SET_SPORT = 'SET_SPORT'
