@@ -5,7 +5,7 @@ import {
 
 const initialState = {
   sport: '',
-  bets: [],
+  events: [],
   fetching: false
 }
 
@@ -16,7 +16,7 @@ export default function page(state = initialState, action) {
       return { ...state, sport: action.payload, fetching: true }
 
     case GET_BETS_SUCCESS:
-      return { ...state, bets: action.payload, fetching: false }
+      return { ...state, events: action.payload, fetching: false }
 
     default:
       return state;

@@ -1,0 +1,1 @@
+export const SELECTED_BET = 'SELECTED_BET'

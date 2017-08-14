@@ -3,6 +3,14 @@
     margin-left: 50px;
 }
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
 .middle {
     width: 80%;
 }
@@ -24,8 +32,14 @@
 }
 
 .user {
-    float: right;
-    padding: 15px;
+}
+
+.tr span {
+    display: none;
+}
+
+.tr .th-1, .tr .th-2, .tr .th-3 {
+    display: block;
 }
 
 table {
@@ -41,6 +55,34 @@ tr .value {
     width: 50px;
 }
 
-tr .long {
-    width: 200px;
+tr .long, div .long {
+    width: 250px;
+}
+
+.plus {
+    font-weight: 900;
+}
+
+.clear {
+    clear: both;
+}
+
+.th {
+    width: 180px;
+}
+
+.number-value {
+    width: 80px;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+span {
+    margin: 0 auto;
+}
+
+.right-block {
+    margin-top: 50px;
 }

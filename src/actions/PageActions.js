@@ -1,11 +1,11 @@
 import {
     GET_BETS_REQUEST,
     GET_BETS_SUCCESS,
-    SET_SPORT
+    SET_SPORT,
+    SELECTED_BET
 } from '../constants/Page'
 
 export function getBets(sport) {
-
 
   return (dispatch) => {
     dispatch({
@@ -13,7 +13,7 @@ export function getBets(sport) {
       payload: sport
     })
 
-    fetch('http://server.js/?action=getBets&sport=' + sport)
+    fetch('http://server.js/index.php?action=getBets&sport=' + sport)
       .then(
           function(response) {
               if (response.status !== 200) {
@@ -28,8 +28,6 @@ export function getBets(sport) {
 
               response.json().then(function(data) {
                   let arr = convertObjectRecursively(data);
-                  console.log('result:');
-                  console.log(arr);
                   dispatch({
                       type: GET_BETS_SUCCESS,
                       payload: arr
@@ -38,8 +36,6 @@ export function getBets(sport) {
           }
       )
     }
-
-
 
     function convertObjectRecursively(data) {
         if (!data) {
@@ -81,4 +77,15 @@ export function setSport(sport) {
         type: SET_SPORT,
         payload: sport
     }
+}
+
+export function setSelectedBet() {
+
+    return (dispatch) => {
+        dispatch({
+            type: SELECTED_BET,
+            payload: {}//TODO
+        })
+    }
+
 }

@@ -1,0 +1,1 @@
+export const SET_BET = 'SET_BET'
